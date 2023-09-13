@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: WEATHER
+    database: DEASOFF
+    description: Weather data from the Snowflake Marketplace
+    schema: WEATHER
+    loader: "Snowflake marketplace"
+    loaded_at_field: time_init_utc
+
+    freshness:
+      warn_after:
+        count: 24 
+        period: hour
+
+    tables: 
+      - name: FORECAST
+        description: >
+          This view contains forecasted weather data from US, only extracted a few columns
+        columns:
+          - name: time_init_utc
+            description: 'Time stamp'
+          - name: postal_code
+            description: the postal code
+          - name: country
+            description: The country
+          - name: date_valid_std
+            description: the forecast time
+          - name: avg_temperature_feelslike_2m_f
+            description: The average temperature feels like. 

@@ -1,0 +1,10 @@
+
+
+select 
+    UNIQUE_KEY,
+	TIME_INIT_UTC,
+	POSTAL_CODE,
+	COUNTRY,
+	DATE_VALID_STD ,
+	AVG_TEMPERATURE_FEELSLIKE_2M_F
+FROM {{ ref('forecast')}}
