@@ -1,0 +1,124 @@
+[0m12:58:01.842032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022345A6A860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223481FE470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223481FE230>]}
+
+
+============================== 12:58:01.842032 | 1f666352-ff98-46e2-abf0-36dea7165e63 ==============================
+[0m12:58:01.842032 [info ] [MainThread]: Running with dbt=1.6.2
+[0m12:58:01.842032 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lkni\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init dbt_project', 'send_anonymous_usage_stats': 'True'}
+[0m12:58:01.842032 [debug] [MainThread]: Starter project path: C:\Users\lkni\OneDrive - Netcompany\Documents\virtual-env\dbt-deas\lib\site-packages\dbt\include\starter_project
+[0m12:58:01.875072 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:58:01.876072 [info ] [MainThread]: Setting up your profile.
+[0m12:59:16.869976 [info ] [MainThread]: Profile dbt_project written to C:\Users\lkni\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:59:16.871975 [debug] [MainThread]: Command `dbt init` succeeded at 12:59:16.870975 after 75.05 seconds
+[0m12:59:16.871975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022345A6A860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223462A3A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223462A2F20>]}
+[0m12:59:16.872976 [debug] [MainThread]: Flushing usage events
+[0m12:59:43.715049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028C4CE66890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028C4F6EE4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028C4F6EE260>]}
+
+
+============================== 12:59:43.730684 | 53e28f0e-2420-4533-98d9-6a41972f73af ==============================
+[0m12:59:43.730684 [info ] [MainThread]: Running with dbt=1.6.2
+[0m12:59:43.730684 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\lkni\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:59:43.730684 [info ] [MainThread]: dbt version: 1.6.2
+[0m12:59:43.730684 [info ] [MainThread]: python version: 3.10.11
+[0m12:59:43.730684 [info ] [MainThread]: python path: C:\Users\lkni\OneDrive - Netcompany\Documents\virtual-env\dbt-deas\Scripts\python.exe
+[0m12:59:43.730684 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:59:43.730684 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'ACCESS_TOKEN'
+[0m12:59:43.743626 [debug] [MainThread]: Command `dbt debug` failed at 12:59:43.743626 after 0.04 seconds
+[0m12:59:43.743626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028C4CE66890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028C4F6EF940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028C4F6ED6C0>]}
+[0m12:59:43.744624 [debug] [MainThread]: Flushing usage events
+[0m13:01:46.540597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6319668C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6343EA4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6343EA320>]}
+
+
+============================== 13:01:46.544597 | 72924ca8-fee1-499f-be7e-41f888168a15 ==============================
+[0m13:01:46.544597 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:01:46.545598 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\lkni\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m13:01:46.546599 [info ] [MainThread]: dbt version: 1.6.2
+[0m13:01:46.547598 [info ] [MainThread]: python version: 3.10.11
+[0m13:01:46.548599 [info ] [MainThread]: python path: C:\Users\lkni\OneDrive - Netcompany\Documents\virtual-env\dbt-deas\Scripts\python.exe
+[0m13:01:46.548599 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m13:01:46.550687 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'ACCESS_TOKEN'
+[0m13:01:46.550687 [debug] [MainThread]: Command `dbt debug` failed at 13:01:46.550687 after 0.03 seconds
+[0m13:01:46.550687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6319668C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6343EBCA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6343E9AE0>]}
+[0m13:01:46.550687 [debug] [MainThread]: Flushing usage events
+[0m13:03:28.861499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196DAC66800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196DD4F2410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196DD4F2260>]}
+
+
+============================== 13:03:28.861499 | f4591472-a44e-405a-915a-7b9dea12e7d0 ==============================
+[0m13:03:28.861499 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:03:28.861499 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lkni\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:03:28.861499 [info ] [MainThread]: dbt version: 1.6.2
+[0m13:03:28.861499 [info ] [MainThread]: python version: 3.10.11
+[0m13:03:28.861499 [info ] [MainThread]: python path: C:\Users\lkni\OneDrive - Netcompany\Documents\virtual-env\dbt-deas\Scripts\python.exe
+[0m13:03:28.861499 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m13:03:28.877130 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'ACCESS_TOKEN'
+[0m13:03:28.884534 [debug] [MainThread]: Command `dbt debug` failed at 13:03:28.884534 after 0.04 seconds
+[0m13:03:28.884534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196DAC66800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196DD4F3A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196DD4F16F0>]}
+[0m13:03:28.885532 [debug] [MainThread]: Flushing usage events
+[0m13:04:11.267211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B1A0668F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B1C8EA500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B1C8EA2C0>]}
+
+
+============================== 13:04:11.282837 | 23034a7f-a055-4f90-abaf-cedc2aa56b4e ==============================
+[0m13:04:11.282837 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:04:11.282837 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\lkni\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:04:11.282837 [info ] [MainThread]: dbt version: 1.6.2
+[0m13:04:11.282837 [info ] [MainThread]: python version: 3.10.11
+[0m13:04:11.282837 [info ] [MainThread]: python path: C:\Users\lkni\OneDrive - Netcompany\Documents\virtual-env\dbt-deas\Scripts\python.exe
+[0m13:04:11.282837 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m13:04:11.282837 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'ACCESS_TOKEN'
+[0m13:04:11.297701 [debug] [MainThread]: Command `dbt debug` failed at 13:04:11.297701 after 0.04 seconds
+[0m13:04:11.298707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B1A0668F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B1C8EBCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B1C8EBA30>]}
+[0m13:04:11.298707 [debug] [MainThread]: Flushing usage events
+[0m13:04:47.578028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEB13668C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEB3BEE4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEB3BEE290>]}
+
+
+============================== 13:04:47.578028 | 950c46d8-6e49-43ee-b3dd-75ff61f6a8e1 ==============================
+[0m13:04:47.578028 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:04:47.578028 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\lkni\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m13:04:47.578028 [info ] [MainThread]: dbt version: 1.6.2
+[0m13:04:47.578028 [info ] [MainThread]: python version: 3.10.11
+[0m13:04:47.578028 [info ] [MainThread]: python path: C:\Users\lkni\OneDrive - Netcompany\Documents\virtual-env\dbt-deas\Scripts\python.exe
+[0m13:04:47.578028 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m13:04:47.593655 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'ACCESS_TOKEN'
+[0m13:04:47.600234 [debug] [MainThread]: Command `dbt debug` failed at 13:04:47.600234 after 0.04 seconds
+[0m13:04:47.601233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEB13668C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEB3BEFCA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEB3BEDAE0>]}
+[0m13:04:47.601233 [debug] [MainThread]: Flushing usage events
+[0m13:12:11.652070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACBEB668C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC15EA4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC15EA290>]}
+
+
+============================== 13:12:11.667594 | 8648f44c-86e4-4ad6-a86f-cb84c1db572c ==============================
+[0m13:12:11.667594 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:12:11.667594 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\lkni\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:12:11.667594 [info ] [MainThread]: dbt version: 1.6.2
+[0m13:12:11.667594 [info ] [MainThread]: python version: 3.10.11
+[0m13:12:11.667594 [info ] [MainThread]: python path: C:\Users\lkni\OneDrive - Netcompany\Documents\virtual-env\dbt-deas\Scripts\python.exe
+[0m13:12:11.667594 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m13:12:11.667594 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'ACCESS_TOKEN'
+[0m13:12:11.681966 [debug] [MainThread]: Command `dbt debug` failed at 13:12:11.681966 after 0.04 seconds
+[0m13:12:11.681966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACBEB668C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC15EBCA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC15E9AE0>]}
+[0m13:12:11.682964 [debug] [MainThread]: Flushing usage events
