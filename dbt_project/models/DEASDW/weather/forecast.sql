@@ -9,3 +9,5 @@ from {{ ref('snapshot_forecast')}}
 {% elif target.name == 'qa' %}
     LIMIT 10000 
 {% else %}
+
+{% endif %}
