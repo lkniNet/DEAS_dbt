@@ -36,10 +36,15 @@ models:
     data_marts: 
       +database: "{{env_var('DBT_ENV_DATA_MARTS_DB', 'DATA_MARTS_DEV')}}"
       +materialized: view
+      intern:
+        weather:
+          +schema: weather
 
     DEASDW:
       +database: "{{env_var('DBT_ENV_DATA_MARTS_DB', 'DEAS_DW_DEV')}}"    
       +materialized: table
+      weather:
+        +schema: weather
 
 snapshots:
   +database: "{{env_var('DBT_ENV_DEASSTG_DB', 'DEASSTG_DEV')}}"
