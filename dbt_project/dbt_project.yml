@@ -50,6 +50,6 @@ snapshots:
   +database: "{{env_var('DBT_ENV_DEASSTG_DB', 'DEASSTG_DEV')}}"
   dbt_project:
     weather: 
-      +target_schema: weather
+      +schema: weather
       ### ghehj
   
