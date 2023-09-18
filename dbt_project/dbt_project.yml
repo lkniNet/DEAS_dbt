@@ -36,7 +36,7 @@ models:
     data_marts: 
       +database: "{{env_var('DBT_ENV_DATA_MARTS_DB', 'DATA_MARTS_DEV')}}"
       +materialized: view
-      Intern:
+      intern:
         weather:
           +schema: weather
 
