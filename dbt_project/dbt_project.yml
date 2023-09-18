@@ -38,13 +38,13 @@ models:
       +materialized: view
       intern:
         weather:
-          +schema: weather
+          +target_schema: weather
 
     DEASDW:
       +database: "{{env_var('DBT_ENV_DATA_MARTS_DB', 'DEAS_DW_DEV')}}"    
       +materialized: table
       weather:
-        +schema: weather
+        +target_schema: weather
 
 snapshots:
   +database: "{{env_var('DBT_ENV_DEASSTG_DB', 'DEASSTG_DEV')}}"
