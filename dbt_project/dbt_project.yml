@@ -41,7 +41,7 @@ models:
           +schema: weather
 
     DEASDW:
-      +database: "{{env_var('DBT_ENV_DATA_MARTS_DB', 'DEAS_DW_DEV')}}"    
+      +database: "{{env_var('DBT_ENV_DEAS_DW_DB', 'DEAS_DW_DEV')}}"    
       +materialized: table
       weather:
         +schema: weather
