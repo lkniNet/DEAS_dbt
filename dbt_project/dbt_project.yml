@@ -1,13 +1,12 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt_project'
-version: '1.0.0'
+name: "dbt_project"
+version: "1.0.0"
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'dbt_project'
+profile: "dbt_project"
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -19,10 +18,9 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["DEASSTG"]
 
-clean-targets:         # directories to be removed by `dbt clean`
+clean-targets: # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
-
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -33,23 +31,32 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_project:
     # Config indicated by + and applies to all files under models/example/
-    data_marts: 
-      +database: "{{env_var('DBT_ENV_DATA_MARTS_DB', 'DATA_MARTS_DEV')}}"
+    data_marts:
       +materialized: view
+      bolig:
+        +database: "{{env_var('DBT_ENV_BOLIG_DB', 'BOLIG_DB_DEV')}}"
+      finans:
+        +database: "{{env_var('DBT_ENV_FINANS_DB', 'FINANS_DB_DEV')}}"
       intern:
+        +database: "{{env_var('DBT_ENV_INTERN_DB', 'INTERN_DB_DEV')}}"
         weather:
           +schema: weather
+          +tags: ["weather", "daily"]
+      loen:
+        +database: "{{env_var('DBT_ENV_LOEN_DB', 'LOEN_DB_DEV')}}"
+      regnskab:
+        +database: "{{env_var('DBT_ENV_REGNSKAB_DB', 'REGNSKAB_DB_DEV')}}"
 
     DEASDW:
-      +database: "{{env_var('DBT_ENV_DEAS_DW_DB', 'DEAS_DW_DEV')}}"    
+      +database: "{{env_var('DBT_ENV_DEAS_DW_DB', 'DEAS_DW_DEV')}}"
       +materialized: table
       weather:
         +schema: weather
+        +tags: ["weather", "daily"]
 
 snapshots:
-  +database: "{{env_var('DBT_ENV_DEASSTG_DB', 'DEASSTG_DEV')}}"
   dbt_project:
-    weather: 
+    +target_database: "{{env_var('DBT_ENV_DEASSTG_DB', 'DEASSTG_DEV')}}"
+    weather:
       +target_schema: weather
-      ### ghehj
-  
+      +tags: ["weather", "daily"]
